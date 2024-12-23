@@ -1,0 +1,100 @@
+.footer {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 0 1rem;
+    font-family: 'Nunito Sans-regular';
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    &__title {
+        font-family: 'Nunito Sans-bold';
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2rem 0 1.5rem 0;
+    }
+    &__social {
+        padding-bottom: 2rem;
+        &-link {
+        margin-right: 1.6rem;
+        }
+    }
+    &__logo {
+        height: 1.5rem;
+        width: 7.5rem;
+    }
+    &__contact {
+        &-name {
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            padding-bottom: 1rem;
+        }
+        &-location,
+        &-link {
+            color: $color-silver;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+    }
+    &__copyright {
+        color: $color-silver;
+        padding-bottom: 2rem;
+    }
+}
+
+@include medium {
+    .footer {
+        padding: 0 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+            padding: 3rem 0 3.5rem 0;
+        }
+        &__social {
+            padding: 0 8rem 0 0;
+            &-link {
+                margin-right: 2rem;
+            }
+        }
+        &__logo {
+            display: inherit;
+            height: 1.5rem;
+            width: 7.5rem;
+        }
+        &__contact {
+            padding-right: 1.875rem;
+            &-name {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+                padding-bottom: 1.5rem;
+            }
+            &-location {
+                padding-bottom: 0.25rem;
+            }
+            &-link {
+                margin-bottom: 2.5rem;
+            }
+            &-container {
+                display: flex;
+                justify-content: left;
+            }
+        }
+    }
+}
+
+@include large {
+    .footer {
+        padding: 0 11.25rem;
+        &__social {
+            padding-right: 30rem;
+        }
+        &__contact {
+            padding-right: 3.25rem;
+        }
+    }
+}
