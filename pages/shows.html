@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hanife BandSite - Shows</title>
     <link rel="stylesheet" href="../styles/shows.css">
+    <!-- Include Axios for API communication -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include script for building shows dynamically -->
+    <script type="module" src="../scripts/build-shows-page.js"></script>
 </head>
 <body>
-    <!--Navbar below-->
+    <!-- Navbar Section -->
     <header class="header">
         <nav class="header__nav">
             <a href="../index.html" class="header__nav-logo-container">
-                <img class="header__nav-image" src="../assets/Logo/Logo-bandsite.svg" alt="band logo">
+                <img class="header__nav-image" src="../assets/Logo/Logo-bandsite.svg" alt="Band logo">
             </a>
             <ul class="header__nav-menu">
                 <li class="header__nav-menu-item">
@@ -24,58 +28,77 @@
             </ul>
         </nav>
     </header>
-    <main>
 
-        <!--Hero Section Below-->
+    <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero__opacity">
-                <div class= "hero__container">
+                <div class="hero__container">
                     <h2 class="hero__title">Beautiful Beasts Album</h2>
                     <h1 class="hero__title-sub">Stripes of Yellow x For The Stings</h1>
                 </div>
                 <div class="hero__title-song">
-                    <iframe class="hero__title-song-inset" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1973977351&amp;color=ff5500"></iframe>
+                    <iframe 
+                        class="hero__title-song-inset" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1973977351&amp;color=ff5500">
+                    </iframe>
                 </div>
+            </div>
+        </section>
+
+        <!-- Shows Section -->
+        <section class="shows">
+            <div class="shows__container">
+                <!-- Dynamic content will be injected here by JavaScript -->
             </div>
         </section>
     </main>
 
-    <!-- Shows section -->
-    <div class="shows">
-    </div>
-
-    <!--Footer Below-->
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="footer__main">
             <h1 class="footer__title">Get in Touch</h1>
             <div class="footer__social">
-                <a class="footer__social-link" href="https://www.instagram.com"><img src="./../assets/Icons/SVG/Icon-instagram.svg" alt="Instagram"></a>
-                <a class="footer__social-link" href="https://www.facebook.com"><img src="./../assets/Icons/SVG/Icon-facebook.svg" alt="Facebook"></a>
-                <a class="footer__social-link" href="https://www.twitter.com"><img src="./../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter"></a>
+                <a class="footer__social-link" href="https://www.instagram.com">
+                    <img src="../assets/Icons/SVG/Icon-instagram.svg" alt="Instagram">
+                </a>
+                <a class="footer__social-link" href="https://www.facebook.com">
+                    <img src="../assets/Icons/SVG/Icon-facebook.svg" alt="Facebook">
+                </a>
+                <a class="footer__social-link" href="https://www.twitter.com">
+                    <img src="../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter">
+                </a>
             </div>
-            <a href="./index.html"><img class="footer__logo" src="./../assets/Logo/Logo-bandsite.svg" alt="Bandsite Logo"></a>
+            <a href="../index.html">
+                <img class="footer__logo" src="../assets/Logo/Logo-bandsite.svg" alt="Bandsite Logo">
+            </a>
         </div>
         <section class="footer__contact-container">
             <div class="footer__contact">
                 <h2 class="footer__contact-name">The Bees Knees Management</h2>
-                <h4 class="footer__contact-location">503 Broadway Penthouse,</br>New York, NY 10012, USA</h4>
-                <a class="footer__contact-link" href="mailto:info@thebeesknees.com"><h4 class="footer__contact-link">info@thebeesknees.com</h4></a>
+                <h4 class="footer__contact-location">503 Broadway Penthouse,<br>New York, NY 10012, USA</h4>
+                <a class="footer__contact-link" href="mailto:info@thebeesknees.com">
+                    info@thebeesknees.com
+                </a>
             </div>
             <div class="footer__contact">
                 <h2 class="footer__contact-name">Limitless Artist Group</h2>
-                <h4 class="footer__contact-location">Booking Agent for</br>US / South America / Japan</h4>
-                <a class="footer__contact-link" href="mailto:bookings@limitlessag.com"><h4 class="footer__contact-link">bookings@limitlessag.com</h4></a>
+                <h4 class="footer__contact-location">Booking Agent for<br>US / South America / Japan</h4>
+                <a class="footer__contact-link" href="mailto:bookings@limitlessag.com">
+                    bookings@limitlessag.com
+                </a>
             </div>
             <div class="footer__contact">
                 <h2 class="footer__contact-name">ARCH Entertainment</h2>
-                <h4 class="footer__contact-location">Booking Agent for</br>UK / EU / AU</h4>
-                <a class="footer__contact-link" href="mailto:bookings@archentertainment.com"><h4 class="footer__contact-link">bookings@archentertainment.com</h4></a>
+                <h4 class="footer__contact-location">Booking Agent for<br>UK / EU / AU</h4>
+                <a class="footer__contact-link" href="mailto:bookings@archentertainment.com">
+                    bookings@archentertainment.com
+                </a>
             </div>
         </section>
         <h4 class="footer__copyright">Copyright The Bees Knees © 2023 All Rights Reserved</h4>
     </footer>
-    
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="../scripts/table_shows.js"></script>
 </body>
 </html>

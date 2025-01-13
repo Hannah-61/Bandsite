@@ -10,6 +10,7 @@ body {
   padding: 0;
 }
 
+/* Color Variables */
 @font-face {
   font-family: "Nunito Sans-regular";
   src: url("../assets/Fonts/NunitoSans-Regular.woff") format("woff");
